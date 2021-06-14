@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 35px;
+
+  .container {
+    max-width: 400px;
+    position: relative;
+
+
+    .revealContainer {
+      max-width: 400px;
+      position: absolute;
+      height: 250px;
+      display: flex;
+      align-items: flex-end;
+      background-color: #CCA43B;
+      margin-right: auto;
+      width: 0%;
+      left: 0;
+      transition: all 0.5s;
+    }
+
+    .name {
+      font-size: 38px;
+      color: #fff;
+      padding: 20px 50px;
+      opacity: 0;
+    }
+  }
+}
