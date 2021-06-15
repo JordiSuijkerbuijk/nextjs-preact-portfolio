@@ -12,7 +12,7 @@ export default function Hero() {
       scaleX: [
         {
           value: 1,
-          duration: 250
+          duration: 275
         }, 
         {
           value: 0,
@@ -34,8 +34,15 @@ export default function Hero() {
 
     anime({
       targets: '.name',
-      keyframes: [
-        {opacity: 1}
+      opacity: [
+        {
+          value: 0,
+          duration: 250,
+        },
+        {
+          value: 1,
+          duration: 100
+        }
       ],
       easing: 'linear',
       duration: 500
@@ -47,10 +54,9 @@ export default function Hero() {
     <div className={style.hero}>
       <div className={style.container}>
         <div className={clsx([style.revealContainer, 'revealContainer'])} />
-        <div className={clsx([style.name, 'name'])}>Jordi Suijkerbuijk</div>
+        <div className={clsx([style.name, 'name'])}>Jordi Suijkerbuijk.</div>
       </div>
-      <div className={style.description}> Hier moet nog tekst komen </div>
-
+      <div className={style.description}> A frontend developer, just graduated in computer science </div>
     </div>
   );
 }

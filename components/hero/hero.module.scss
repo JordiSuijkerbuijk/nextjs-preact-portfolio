@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: 10px 35px;
+  margin-bottom: 150px;
 
   .container {
     max-width: fit-content;
     position: relative;
-    height: 125px;
+    // height: 125px;
     display: flex;
     align-items: flex-end;
 
@@ -20,16 +21,26 @@
       left: 0;
       bottom: 0;
       transform: scaleX(0);
-      transition: 0.25s;
+      transition: 0.2s;
       z-index: 1;
     }
 
     .name {
-      font-size: 38px;
+      font-size: 44px;
       color: #fff;
-      padding: 20px 15px;
       opacity: 0;
-      transition: 0.25s;
+      transition: 0.3s;
+      font-weight: bold;
+      margin-top: 100px;
+      margin-bottom: 15px;
     }
+  }
+
+  .description {
+    margin-top: 30px;
+    color: #CCA43B;
+    font-size: 26px;
+    font-weight: bold;
+    width: 60%;
   }
 }
