@@ -9,19 +9,37 @@ export default function Hero() {
   useEffect(() => {
     anime({
       targets: '.revealContainer',
-      keyframes: [
-        {width: '100%', left: 0},
-        {width: '0', left: '100%'}
+      scaleX: [
+        {
+          value: 1,
+          duration: 250
+        }, 
+        {
+          value: 0,
+          duration: 250
+        }
       ],
-      duration: 500
+      transformOrigin: [
+        {
+          value: '0% 50%',
+          duration: 250,
+        },
+        {
+          value: '100% 100%',
+          duration: 0
+        }
+      ],
+      easing: 'linear',
     });
 
     anime({
       targets: '.name',
-      opacity: 1,
-      duration: 1000,
-      easing: 'easeOutExpo'
-    })
+      keyframes: [
+        {opacity: 1}
+      ],
+      easing: 'linear',
+      duration: 500
+    });
   }, [])
 
 

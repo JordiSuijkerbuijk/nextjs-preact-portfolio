@@ -4,28 +4,32 @@
   padding: 10px 35px;
 
   .container {
-    max-width: 400px;
+    max-width: fit-content;
     position: relative;
-
+    height: 125px;
+    display: flex;
+    align-items: flex-end;
 
     .revealContainer {
-      max-width: 400px;
       position: absolute;
-      height: 250px;
-      display: flex;
-      align-items: flex-end;
+      height: 100%;
       background-color: #CCA43B;
       margin-right: auto;
-      width: 0%;
+      transform-origin: 0% 50%;
+      width: 100%;
       left: 0;
-      transition: all 0.5s;
+      bottom: 0;
+      transform: scaleX(0);
+      transition: 0.25s;
+      z-index: 1;
     }
 
     .name {
       font-size: 38px;
       color: #fff;
-      padding: 20px 50px;
+      padding: 20px 15px;
       opacity: 0;
+      transition: 0.25s;
     }
   }
 }
