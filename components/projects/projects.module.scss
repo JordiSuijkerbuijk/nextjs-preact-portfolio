@@ -1,7 +1,12 @@
 .projects {
   padding: 10px 35px;
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
+
+  a {
+    text-decoration: none;
+    
+  }
 
   .card {
     padding: 35px 45px;
@@ -10,6 +15,7 @@
     position: relative;
     max-width: 275px;
     width: 45%;
+    cursor: pointer;
 
     &:hover {
       .backgroundColor {
@@ -24,6 +30,7 @@
       font-weight: bold;
       font-size: 20px;
       margin-bottom: 15px;
+      word-break: break-all;
     }
     
     .backgroundColor {

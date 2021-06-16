@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import style from './nav.module.scss'; 
 
 export default function Nav() {
@@ -5,11 +7,11 @@ export default function Nav() {
 
   return (
     <div className={style.nav}>
-      <div className={style.name}>Jordi Suijkerbuijk</div>
+      <div className={clsx([style.name, style.underline])}>Jordi Suijkerbuijk</div>
       <div className={style.container}>
         <div className={style.dash} />
         {items.map(item => (
-          <div className={style.item}>{item}</div>
+          <div className={clsx([style.item, style.underline])}>{item}</div>
         ))}
       </div>
     </div>

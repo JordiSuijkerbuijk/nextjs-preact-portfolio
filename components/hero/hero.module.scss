@@ -41,6 +41,43 @@
     color: #CCA43B;
     font-size: 26px;
     font-weight: bold;
-    width: 60%;
+    width: fit-content;
+    font-style: italic;
+  }
+}
+
+.underline {
+  position: relative;
+
+  &.white {
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      z-index: -1;
+      width: 0px;
+      height: 5px;
+      background-color: #fff;
+      transition: all 0.11s;
+    }
+  }
+
+  &.default {
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 6px;
+      z-index: -1;
+      width: 0px;
+      height: 10px;
+      background-color: #CCA43B;
+      transition: all 0.11s;
+    }
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+    }
   }
 }

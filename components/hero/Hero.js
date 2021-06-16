@@ -54,9 +54,9 @@ export default function Hero() {
     <div className={style.hero}>
       <div className={style.container}>
         <div className={clsx([style.revealContainer, 'revealContainer'])} />
-        <div className={clsx([style.name, 'name'])}>Jordi Suijkerbuijk.</div>
+        <div className={clsx([style.name, 'name', style.underline, style.default])}>Jordi Suijkerbuijk.</div>
       </div>
-      <div className={style.description}> A frontend developer, just graduated in computer science </div>
+      <div className={clsx([style.description, style.underline, style.white])}> A frontend developer, just graduated in computer science </div>
     </div>
   );
 }

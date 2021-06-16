@@ -7,24 +7,6 @@
 
   .name {
     font-size: 18px;
-    position: relative;
-
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 2px;
-      z-index: -1;
-      width: 0px;
-      height: 5px;
-      background-color: #CCA43B;
-      transition: all 0.11s;
-    }
-
-    &:hover {
-      &:before {
-        width: 100%;
-      }
-    }
   }
 
   .container {
@@ -42,24 +24,27 @@
 
     .item {
       margin-left: 15px;
-      position: relative;
-      
-      &:before {
-        content: "";
-        position: absolute;
-        bottom: 2px;
-        z-index: -1;
-        width: 0px;
-        height: 5px;
-        background-color: #CCA43B;
-        transition: all 0.11s;
-      }
+    }
+  }
+}
 
-      &:hover {
-        &:before {
-          width: 100%;
-        }
-      }
+.underline {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    z-index: -1;
+    width: 0px;
+    height: 5px;
+    background-color: #CCA43B;
+    transition: all 0.11s;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
     }
   }
 }
