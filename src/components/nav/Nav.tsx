@@ -2,7 +2,7 @@ export const Nav = (): JSX.Element => {
   const items = ['Projects', 'About'];
 
   return (
-    <div className='w-full flex items-end p-5 text-white'>
+    <nav className='flex items-end w-full p-5 text-white'>
       <div className=''>Jordi Suijkerbuijk</div>
       <div className=''>
         <div className='' />
@@ -12,6 +12,6 @@ export const Nav = (): JSX.Element => {
           </div>
         ))}
       </div>
-    </div>
+    </nav>
   );
 };
