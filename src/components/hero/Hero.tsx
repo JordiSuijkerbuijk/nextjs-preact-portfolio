@@ -1,4 +1,6 @@
-import { useEffect } from 'preact/hooks';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function Hero() {
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className=''>
+    <div className='flex flex-col px-5 py-8'>
       <div className=''>
         <div className='' />
         <div className=''>Jordi Suijkerbuijk.</div>
